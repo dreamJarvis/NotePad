@@ -1,0 +1,77 @@
+body {
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+.head {
+    width: fit-content;
+}
+
+.noteTaker {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}
+
+.box-1 {
+    text-align: center;
+}
+
+.box-2 {
+    width: 80%;
+    background-color: rgb(247, 254, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #707070;
+}
+
+
+/* MODAL settings */
+
+.modal-dialog {
+    margin-top: 40vh;
+    vertical-align: middle;
+}
+
+
+/* row settings */
+
+.row {
+    padding: 10px;
+}
+
+
+/* card, modal settings */
+
+.modalSpan {
+    float: right;
+}
+
+.card {
+    background-color: rgb(186, 219, 0);
+    color: rgb(95, 95, 95);
+    font-weight: 900;
+}
+
+#content {
+    padding-top: 1.5rem;
+}
+
+hr {
+    color: cornsilk;
+}
+
+
+/* your note font settings */
+
+#yourNote {
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(90, 90, 90);
+}
+
+.modal-content {
+    background-color: rgb(240, 255, 157);
+    color: rgb(78, 78, 78);
+    font-weight: 900;
+}
