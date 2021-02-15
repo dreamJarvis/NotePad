@@ -1,7 +1,7 @@
 # This is an CRUD application which stores your notes in localstorage
 
 functionalities :
-  add a note
+  add a note,
   remove a note
 
 Technologies used : 
