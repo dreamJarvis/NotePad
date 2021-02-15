@@ -2,9 +2,9 @@
 
 functionalities :
   add a note
- remove a note
+  remove a note
 
-// Technologies used : 
+Technologies used : 
 HTML5/CSS3
 vanilla JS
 bootstrap 5
