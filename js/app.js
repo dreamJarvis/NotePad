@@ -28,13 +28,14 @@ class UI {
                 <span class="modalSpan"><button type="button" class="btn btn-sm btn-secondary delete">X</button></span>
                 <p class="card-text">${visibleText} .... </p>
                 <p class="fullText" style="display:none">${note}</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="modalView('${note}')">
+                <button type="button" class="btn btn-primary viewModal">
                     View more
                 </button>
             </div>
         </div>
         `;
 
+        // adding class styles
         let modalClasses = ['col-sm-6']
         newEle.classList = modalClasses;
         newEle.style.display = 'inline-block';
@@ -110,6 +111,14 @@ contentBox.addEventListener('click', (e) => {
 });
 
 // to view the full text in modal view
-function modalView(note) {
-    document.getElementById('modalTextContent').textContent = note;
-}
+const textModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+    keyboard: false
+});
+
+contentBox.addEventListener('click', (e) => {
+    if (e.target.classList.contains('viewModal')) {
+        const note = e.target.previousElementSibling.textContent;
+        document.getElementById('modalTextContent').textContent = note;
+        textModal.show();
+    }
+});
